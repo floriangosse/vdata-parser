@@ -1,0 +1,28 @@
+{
+  "name": "vdata-parser",
+  "version": "0.0.0",
+  "main": "lib/vdata-parser.js",
+  "description": "Parse vdata (ics, vcal, vcard) to javscript objects.",
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "keywords": [
+    "vdata",
+    "ics",
+    "vcal",
+    "vcard"
+  ],
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^0.4.0",
+    "time-grunt": "^0.3.1",
+    "jshint-stylish": "^0.1.5"
+  },
+  "scripts": {
+    "test": "grunt test"
+  }
+}
