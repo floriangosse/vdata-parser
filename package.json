@@ -1,13 +1,17 @@
 {
   "name": "vdata-parser",
   "version": "0.1.0",
-  "main": "lib/vdata-parser.js",
+  "author": "Florian Goße <florian@essog.de>",
   "description": "Parse vdata (ics, vcal, vcard) to javscript objects.",
-  "licenses": [
-    {
-      "type": "MIT"
-    }
-  ],
+  "license": "MIT",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "main": "lib/vdata-parser.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/floriangosse/vdata-parser.git"
+  },
   "keywords": [
     "vdata",
     "ics",
@@ -22,8 +26,5 @@
     "time-grunt": "^0.3.1",
     "jshint-stylish": "^0.1.5",
     "grunt-bump": "0.0.13"
-  },
-  "scripts": {
-    "test": "grunt test"
   }
 }
