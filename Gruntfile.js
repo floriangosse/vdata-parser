@@ -42,6 +42,12 @@ module.exports = function (grunt) {
                 files: '<%= jshint.test.src %>',
                 tasks: ['jshint:test', 'nodeunit']
             }
+        },
+        bump: {
+            options: {
+                push: false,
+                pushTo: 'origin'
+            }
         }
     });
 
