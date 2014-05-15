@@ -1,6 +1,6 @@
 {
   "name": "vdata-parser",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Florian Goße <florian@essog.de>",
   "description": "Parse vdata (ics, vcal, vcard) to javscript objects.",
   "license": "MIT",
