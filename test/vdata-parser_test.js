@@ -31,7 +31,7 @@ var dummy = "" +
     "NAME:Hello World\n" +
     "BEGIN:LANGUAGE\n" +
         "KEY:English\n" +
-        "NAME:Hello World\n" +
+        "NAME:Hello W\n orld\n" +
     "END:LANGUAGE\n" +
     "BEGIN:LANGUAGE\n" +
         "KEY:German\n" +
