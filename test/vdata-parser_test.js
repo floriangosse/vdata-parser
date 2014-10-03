@@ -91,7 +91,7 @@ exports['vdata-parser'] = {
         var data = parser.fromString(dummy);
 
         // check if data and expected equal
-        test.strictEqual(JSON.toString(data), JSON.toString(expected));
+        test.strictEqual(JSON.stringify(data), JSON.stringify(expected));
         // tests here
         test.done();
     },
@@ -100,7 +100,7 @@ exports['vdata-parser'] = {
         // parse dummy
         parser.fromFile(dummyFile, function (err, data) {
             // check if data and expected equal
-            test.strictEqual(JSON.toString(data), JSON.toString(expected));
+            test.strictEqual(JSON.stringify(data), JSON.stringify(expected));
             // tests here
             test.done();
         });
@@ -111,7 +111,7 @@ exports['vdata-parser'] = {
         var data = parser.fromFileSync(dummyFile);
 
         // check if data and expected equal
-        test.strictEqual(JSON.toString(data), JSON.toString(expected));
+        test.strictEqual(JSON.stringify(data), JSON.stringify(expected));
         // tests here
         test.done();
     }
