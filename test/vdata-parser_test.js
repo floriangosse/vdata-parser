@@ -41,6 +41,8 @@ var dummy = "" +
         "KEY:Latin\n" +
         "NAME:salve mundi\n" +
     "END:LANGUAGE\n" +
+    "EMAIL;TYPE=INTERNET:abc@def.com\n" +
+    "EMAIL;TYPE=INTERNET;TYPE=HOME:info@xyz.com\n" +
 "END:MESSAGE";
 
 // The structure which is expected for dummy above and the test file
@@ -56,7 +58,9 @@ var expected = {
         },{
             'KEY': 'Latin',
             'NAME': 'salve mundi'
-        }]
+        }],
+        'EMAIL': [{value: "abc@def.com", params: [{TYPE: "INTERNET"}]},
+            {value: "info@xyz.com", params: [{TYPE: "INTERNET"}, {TYPE: "HOME"}]}]
     }
 };
 
