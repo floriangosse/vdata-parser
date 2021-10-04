@@ -8,12 +8,6 @@ module.exports = function (grunt) {
 
     // Project configuration.
     grunt.initConfig({
-        nodeunit: {
-            options: {
-                reporter: 'default'
-            },
-            files: ['test/{,**/}*_test.js']
-        },
         jshint: {
             options: {
                 jshintrc: '.jshintrc',
@@ -36,11 +30,11 @@ module.exports = function (grunt) {
             },
             lib: {
                 files: '<%= jshint.lib.src %>',
-                tasks: ['jshint:lib', 'nodeunit']
+                tasks: ['jshint:lib']
             },
             test: {
                 files: '<%= jshint.test.src %>',
-                tasks: ['jshint:test', 'nodeunit']
+                tasks: ['jshint:test']
             }
         },
         bump: {
@@ -52,7 +46,7 @@ module.exports = function (grunt) {
     });
 
     // Test task.
-    grunt.registerTask('test', ['jshint', 'nodeunit']);
+    grunt.registerTask('test', ['jshint']);
     // Default task.
     grunt.registerTask('default', ['test']);
 
