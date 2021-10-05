@@ -12,15 +12,28 @@ const expectedData = {
         'LANGUAGE': [{
             'KEY': 'English',
             'NAME': 'Hello World'
-        },{
+        }, {
             'KEY': 'German',
             'NAME': 'Hallo Welt'
-        },{
+        }, {
             'KEY': 'Latin',
             'NAME': 'salve mundi'
         }],
-        'EMAIL': [{value: "abc@def.com", params: [{TYPE: "INTERNET"}]},
-            {value: "info@xyz.com", params: [{TYPE: "INTERNET"}, {TYPE: "HOME"}]}]
+        'EMAIL': [
+            {
+                value: 'abc@def.com',
+                params: [
+                    { TYPE: 'INTERNET' }
+                ]
+            },
+            {
+                value: 'info@xyz.com',
+                params: [
+                    { TYPE: 'INTERNET' },
+                    { TYPE: 'HOME' }
+                ]
+            }
+        ]
     }
 };
 
