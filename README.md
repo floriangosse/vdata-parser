@@ -1,4 +1,4 @@
-# vdata-parser [![Build Status](https://secure.travis-ci.org/floriangosse/vdata-parser.png?branch=master)](http://travis-ci.org/floriangosse/vdata-parser)
+# vdata-parser
 
 Parse vdata (ics, vcal, vcard) to javscript objects.
 
